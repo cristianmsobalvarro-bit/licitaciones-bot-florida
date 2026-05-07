@@ -48,3 +48,4 @@ To maintain 100% free operation and bypass enterprise protections (like Cloudfla
 ## Known Deficiencies & Future Improvements
 While the system is robust, there is a key area requiring further development:
 - **Precision Filtering for Recent & Exact-Match Bids:** The system currently needs improvements in its ability to detect and isolate *only* recently posted bids. Furthermore, when querying for specific trades (like "roofing"), it requires a more granular classification mechanism to ensure the captured bids exactly match the specific class or subtype of roofing requested by the user, rather than general or loosely related construction contracts.
+- **Data Overload & Manual Filtering:** Because the system pulls absolutely every bid it finds that matches the keywords, the output often includes a massive amount of expired, closed, or unqualified bids. Currently, this requires extensive manual filtering work post-scraping to isolate the real, viable, and active bids.
