@@ -44,3 +44,7 @@ To maintain 100% free operation and bypass enterprise protections (like Cloudfla
 
 ## Status
 **Production Ready.** The system is capable of industrial-scale scraping, running silently, and self-adapting to new search queries out-of-the-box.
+
+## Known Deficiencies & Future Improvements
+While the system is robust, there is a key area requiring further development:
+- **Precision Filtering for Recent & Exact-Match Bids:** The system currently needs improvements in its ability to detect and isolate *only* recently posted bids. Furthermore, when querying for specific trades (like "roofing"), it requires a more granular classification mechanism to ensure the captured bids exactly match the specific class or subtype of roofing requested by the user, rather than general or loosely related construction contracts.
